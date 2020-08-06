@@ -1,38 +1,144 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Chilanka', cursive;
+  
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
+  cursor: pointer;
+}
+
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 5px 0;
+  flex-direction: column;
+  
+}
+
+.heading {
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  padding: 5px 0;
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+.item {
+  margin: 0 20px;
+  height: 80vh;
+  width: 200%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+span {
   color: white;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  width: 100%;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  border: 4px solid white;
+  background-color: rgb(224, 218, 210);
+  border-radius: 10px;
+  padding: 2em 2em;
+  font-size: 18px;
+  box-shadow: 0 2.8px 2.2px rgba(151, 147, 147, 0.034),
+  0 6.7px 5.3px rgba(151, 147, 147, 0.048),
+  0 12.5px 10px rgba(151, 147, 147, 0.06),
+  0 22.3px 17.9px rgba(151, 147, 147, 0.072),
+  0 41.8px 33.4px rgba(151, 147, 147, 0.086),
+  0 100px 80px rgba(151, 147, 147, 0.12);
+  transition: 0.75s;
+  line-height: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea:focus {
+  border: 4px solid black;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.048),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.072),
+  0 12.5px 10px rgba(0, 0, 0, 0.082),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.96),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.112),
+  0 100px 80px rgba(0, 0, 0, 0.202);
 }
+
+
+.parsed-container {
+  text-align: left;
+  width: 100%;
+  overflow: auto;
+  border: 4px solid white;
+  background-color: rgb(224, 218, 210);
+  border-radius: 10px;
+  padding: 2em 2em;
+  font-size: 20px;
+  font-stretch: semi-expanded;
+  box-shadow: 0 2.8px 2.2px rgba(151, 147, 147, 0.034),
+  0 6.7px 5.3px rgba(151, 147, 147, 0.048),
+  0 12.5px 10px rgba(151, 147, 147, 0.06),
+  0 22.3px 17.9px rgba(151, 147, 147, 0.072),
+  0 41.8px 33.4px rgba(151, 147, 147, 0.086),
+  0 100px 80px rgba(151, 147, 147, 0.12);
+  transition: 0.75s;
+  line-height: 2em;
+  height: 50vh;
+}
+
+
+.button-container > .copy {
+  height: 4em;
+  width: 12em;
+  margin-top: 4em;
+  color: black;
+  background-color: rgb(230, 161, 58);
+  cursor: pointer;
+  padding : 12px 20px;
+  font-size : 20px;
+  border-radius: 10px;
+  box-shadow:
+    0 0 60px 5px rgb(65, 63, 63);
+    transition: 0.5s;
+}
+
+.button-container > .copy:hover {
+  height: 4em;
+  width: 12em;
+  margin-top: 4em;
+  color: white;
+  background-color: rgb(44, 44, 43);
+  cursor: pointer;
+  padding : 12px 20px;
+  font-size : 20px;
+  border-radius: 10px;
+  box-shadow:
+    0 0 60px 5px rgb(27, 26, 26);
+}
+
