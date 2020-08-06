@@ -92,7 +92,7 @@ const App = () => {
         <div className="input-container item">
           <span>Markdown</span>
           <div>
-            <textarea rows={25} placeholder="Enter markdown" onChange={(event) => handleChange(event.target.value)} value={markedValue} onKeyUp={handleKeyUp}/>
+            <textarea rows={15} placeholder="Enter markdown" onChange={(event) => handleChange(event.target.value)} value={markedValue} onKeyUp={handleKeyUp}/>
           </div>
         </div>
         <div className="preview-container item">
